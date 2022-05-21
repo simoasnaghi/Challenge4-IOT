@@ -1,0 +1,70 @@
+********************************************
+*                                          *
+*             TOSSIM Script                *
+*                                          *
+********************************************
+Initializing mac....
+Initializing radio channels....
+    using topology file: topology.txt
+    using noise file: meyer-heavy.txt
+Initializing simulator....
+Activate debug message on channel init
+Activate debug message on channel boot
+Activate debug message on channel radio
+Activate debug message on channel radio_send
+Activate debug message on channel radio_ack
+Activate debug message on channel radio_rec
+Activate debug message on channel radio_pack
+Activate debug message on channel role
+Creating node 1...
+>>>Will boot at time 0 [sec]
+Creating node 2...
+>>>Will boot at time 0 [sec]
+Creating radio channels...
+>>>Setting radio channel from node  1  to node  2  with gain  -60.0  dBm
+>>>Setting radio channel from node  2  to node  1  with gain  -60.0  dBm
+Initializing Closest Pattern Matching (CPM)...
+Reading noise model data file: meyer-heavy.txt
+Loading:##Done!
+>>>Creating noise model for node: 1
+>>>Creating noise model for node: 2
+Start simulation with TOSSIM! 
+
+
+
+Application booted.
+boot: time 0:0:0.000000000.
+Application booted.
+boot: time 0:0:0.000000000.
+DEBUG (1): radio: radio started on node 1.
+DEBUG (1): radio: time 0:0:0.000000010.
+DEBUG (2): radio: radio started on node 2.
+DEBUG (2): radio: time 0:0:0.000000010.
+DEBUG (1): radio_pack: Message is gettin ready.
+DEBUG (1): radio_send: Message has been sent at time: 0:0:0.976562510.
+DEBUG (1): >>Pack
+	 Payload length 6 
+		 type: 1 
+		 counter: 1 
+DEBUG (2): >>Pack
+	 Payload received length 0 
+		 type: 1 
+		 counter: 1 
+DEBUG (2): radio_rec: Incoming message is ok. Proceding... Time: 0:0:0.978912349.
+DEBUG (1): radio_send: packet sent correctly. Time: 0:0:0.979080195.
+DEBUG (1): radio_ack: Message acked. Time: 0:0:0.979080195.
+radio_send: Timer stopped. Time: 0:0:0.979080195.
+boot: radio stopped
+DEBUG (2): radio_rec: read value ok. Time: 0:0:0.988281260
+DEBUG (2): radio_ack: Ack request. Time: 0:0:0.988281260
+DEBUG (2): radio_send: Msg sent. Time: 0:0:0.988281260
+DEBUG (2): >>Pack
+	 Payload length 6 
+		 type: 2 
+		 counter: 1 
+		 data: 50421 
+DEBUG (2): radio_send: packet sent correctly. Time: 0:0:0.991592397.
+
+
+
+Simulation finished!
